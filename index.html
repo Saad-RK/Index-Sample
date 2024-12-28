@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air University</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="jjjpreconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">    
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"> <img src="images/au-logo.png" </a>
+
+            <div class="h-buttons" id="hButtons">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>         
+                    <ul>
+                    <li> <a href=""> Home </a></li>
+                    <li> <a href=""> About </a></li>
+                    <li> <a href=""> Admissions </a></li>
+                    <li> <a href=""> Portals </a></li>
+                    <li> <a href=""> Contact </a></li>
+
+                </ul>
+
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+    <div class="text-box">
+        <h1>Elevating Academic Excellence</h1>
+        <p>Air University aspires to be among the leading national universities, excelling in teaching, learning, research, <br> innovation, and public service.</p>
+
+        <a href=""class="main-btn">Join Us</a>
+    </div>    
+
+    </section>
+
+ <!------Programs Section--------->
+<section class="programs">
+
+    <h1>Air University Programs</h1>
+    <p>Air University offers a wide range of programs in many faculties including</p>
+
+    <div class="row">
+            <div class="programs-col">
+                <h3>Undergraduate Programs</h3>
+                <p>Students' professional development and foundation building are both facilitated by their undergraduate education. Our diverse UG programmes turn students into successful people</p>
+            </div>
+                <div class="programs-col">
+                    <h3>Master Programs</h3>
+                    <p>Graduate programmes encourage students to be inquisitive and enhance their knowledge and expertise in specialised sectors. As a result, AU has the most MS-level programmes available</p>
+                </div>
+                <div class="programs-col">
+                    <h3>PhD Programs</h3>
+                    <p>The goal of the PhD programmes at AU is to provide information that fuels economic progress. However, AU sought to produce knowledge for professional development</p>
+                </div>
+                        
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+<section class="campus">
+    <h1> Our Campuses </h1>
+
+    <p> Air University has various campuses across the Pakistan </p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/au-isb-campus.jpg"
+
+
+</div> 
+
+    </div>
+
+
+</section>
+
+
+
+
+
+    <!------JS for toggling menu--------->
+
+<script>
+    var hButtons=document.getElementById("hButtons");
+    function showMenu(){
+        hButtons.style.right="0px";
+    }
+
+    function hideMenu(){
+        hButtons.style.right="-200px";
+    }
+
+</script>
+
+    
+</body>
+</html>

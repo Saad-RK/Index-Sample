@@ -7,7 +7,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(38, 38, 36, 0.301), rgba(29, 30, 29, 0.581)),url(images/h12-banner.jpg);
+    background-image: linear-gradient(rgba(71, 61, 61, 0.301), rgba(29, 30, 29, 0.581)),url(images/au-isb-4.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -16,10 +16,15 @@
 
 .header nav img {
 
-    width: 90px;
+    width: 120px;
 
 }
 
+@media(max-width:768px){
+    .header nav img{
+        width: 65px;
+    }
+}
 nav{
     display: flex;
     padding: 2% 6%;
@@ -96,11 +101,9 @@ nav{
 }
 
 .main-btn:hover{
-    border: 1px solid #2166f2;
-    background:#2166f2;
+    border: 1px solid #ee7f10;
+    background:#ee7f10;
     transition: 0.5s;
-
-
 }
 
 nav .fa {
@@ -230,8 +233,264 @@ h3{
 
 .campus-col{
 flex-basis: 32%;
-border-radius: 15px;
+border-radius: 10px;
 margin-bottom: 30px;
 position: relative;
 overflow: hidden;
+}
+
+.campus-col img {
+    width: 100%;
+    display: block;
+
+}
+
+.layer{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+
+.layer:hover{
+    background: rgba(226,0,0, 0.7);
+}
+
+
+.layer h3{
+    width:100%;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 40%;
+    opacity: 1;
+
+}
+
+
+/*-----Facilities-----*/
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.facilities-col{
+    flex-basis: 55%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+
+.facilities-col img{
+    width: 80%;
+    border-radius: 10px;
+}
+
+.facilities-col p{
+    padding-right: 45px;
+    margin-top: -3%;
+    margin-left: -2.5%;
+}
+
+.facilities-col h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    text-align: left;
+}
+
+@media (max-width: 768px){
+.facilities{
+    align-items: center;
+}
+
+.facilities-col img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+
+}
+}
+
+
+/*---CTA----*/
+
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/au-isb-3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.footer {
+    background-color: #45a9b991;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    width: 60%;
+    height: auto;
+}
+
+.logo-text{
+    font-size: 45px;
+    margin: -10px;
+    padding-bottom: 10px;
+}
+
+.footer-info {
+    text-align: left;
+    font-size: 1rem;
+}
+
+.footer-info p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+.footer-info i {
+    color: #0275d8;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        margin-bottom: 20px;
+    }
+}
+
+.icons{
+    color: rgb(22, 22, 22);
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 10px 0;
+
+}
+
+.fa-heart{
+    color: red;
+}
+
+
+/* Preloader Styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #d86202, #5bc0de); /* Blue gradient */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.preloader-logo {
+    width: 150px; 
+    height: auto;
+    animation: bounce 2s infinite;
+}
+
+.preloader-text {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    animation: fade-in-out 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+
+@keyframes fade-in-out {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+body.loaded #preloader {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-out, visibility 1s ease-out;
+}
+
+
+/*----Media Query to center the preloader---*/
+
+@media (max-width: 768px) {
+    #preloader {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+    .preloader-logo {
+        max-width: 70%; 
+        height: auto;
+    }
+
+    .preloader-text {
+        font-size: 1rem; 
+        margin-top: 10px; 
+    }
 }
